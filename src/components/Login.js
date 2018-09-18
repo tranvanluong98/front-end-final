@@ -1,9 +1,10 @@
 
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 import video from '../video/login.mp4'
 import '../CSS/style.css'
-import axios from 'axios'
+import axios from 'axios';
+import Register from './Register';
 axios.defaults.withCredentials = true;
 class App extends Component {
     _onChangeUserName=(e)=>{
@@ -74,9 +75,9 @@ class App extends Component {
                             
                             <button className="button1 btn btn-primary" id='login'  onClick={this._onSubmit}> Login </button>
                            
-                               <a href="/register">
+                               <Link to={'/register'}>
                                 <button className="button1 btn btn-success" id='register'> Register </button>
-                                </a>
+                               </Link>
                      
                             <br />
                             

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../CSS/style.css';
+import {Link} from 'react-router-dom'
 import $ from "jquery"
 import axios from 'axios';
 axios.defaults.withCredentials = true;
@@ -49,13 +50,13 @@ class HomePage extends Component {
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a href="#home" className="nav-link">TRANG CHỦ</a>
+                  <a href="/" className="nav-link">TRANG CHỦ</a>
                 </li>
                 <li className="nav-item">
                   <a href="#about" className="nav-link">ĐĂNG NHẬP</a>
                 </li>
                 <li className="nav-item">
-                  <a href="/register" className="nav-link">ĐĂNG KÝ TÀI KHOẢN</a>
+                  <Link to={'/register'} className="nav-link">ĐĂNG KÝ TÀI KHOẢN</Link>
                 </li>
                 <li className="nav-item">
                   <a href="#contact" className="nav-link">LIÊN HỆ</a>
@@ -113,7 +114,7 @@ class HomePage extends Component {
                   <h2 className="font-weight-bold">Hãy Tìm Đối Thủ Để Thi Đấu Nào!</h2>
                   <p className="mx-auto cta_details_mx mt-4 pt-2">Bạn hãy thi đấu hết sức mình dành chiến thắng để dành được phần quà hấp dẫn.</p>
                   <div className="mt-4 pt-3">
-                    <a href="/" className="btn btn_outline_custom btn-rounded">Tạo Phòng Thi Đấu</a>
+                    <Link to={'/'} className="btn btn_outline_custom btn-rounded">Tạo Phòng Thi Đấu</Link>
                   </div>
                 </div>
               </div>
