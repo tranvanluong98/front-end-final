@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import axios from 'axios'
-axios.defaults.withCredentials = true;
+
 import {
   Container, Label, Badge, CardTitle,
   Button, Input, Form, FormGroup,
   Nav
 } from 'reactstrap';
-
+import axios from 'axios'
+axios.defaults.withCredentials = true;
 class Register extends Component {
 
   componentDidMount() {

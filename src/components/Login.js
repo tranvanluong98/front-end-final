@@ -1,9 +1,10 @@
 
 import React, { Component } from 'react';
-import axios from 'axios'
-axios.defaults.withCredentials = true;
+
 import video from '../video/login.mp4'
 import '../CSS/style.css'
+import axios from 'axios'
+axios.defaults.withCredentials = true;
 class App extends Component {
     _onChangeUserName=(e)=>{
         this.setState({
