@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import axios from "axios"
+import axios from 'axios'
+axios.defaults.withCredentials = true;
 import MainContent from './MainContent';
 import Navbar from './Navbar';
 class App extends Component {

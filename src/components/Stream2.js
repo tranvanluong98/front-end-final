@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Peer from 'peerjs';
 import openSocket from 'socket.io-client';
-import axios from "axios";
+import axios from 'axios'
+axios.defaults.withCredentials = true;
 
 import {Input} from 'reactstrap'
 class App extends Component {
@@ -203,8 +204,7 @@ class App extends Component {
                 </div>
                 <p className=" time-remain" > Time remain: {this.state.Time} </p>  
                 </div>
-                    {/* <button onClick={this._onStartLiveStream} className="" >Start Livestream</button> */}
-                    {/* <button className="btn btn_custom_1 btn_round start-btn" id="start" onClick={this._startGame}>START</button> */}
+                   
                 </div>
                 <div className="col-4">
                 <div className="chat">

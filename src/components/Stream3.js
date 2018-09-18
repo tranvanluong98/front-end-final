@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Peer from 'peerjs';
 import openSocket from 'socket.io-client';
-import axios from 'axios';
+import axios from 'axios'
+axios.defaults.withCredentials = true;
 import {Input} from 'reactstrap'
 class App extends Component {
     state = {

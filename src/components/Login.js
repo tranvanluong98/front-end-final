@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
-import axios from 'axios';
+import axios from 'axios'
+axios.defaults.withCredentials = true;
 import video from '../video/login.mp4'
 import '../CSS/style.css'
 class App extends Component {
@@ -33,8 +34,13 @@ class App extends Component {
             
         });
     }
+
+    
     // Luong 
-  
+    // _onSubmitRegister=(e)=>{
+        
+    // }
+
     
     render() {
         return (
@@ -68,7 +74,7 @@ class App extends Component {
                             <button className="button1 btn btn-primary" id='login'  onClick={this._onSubmit}> Login </button>
                            
                                <a href="/register">
-                                <button className="button1 btn btn-success" id='register' onClick={this._onSubmitRegister}> Register </button>
+                                <button className="button1 btn btn-success" id='register'> Register </button>
                                 </a>
                      
                             <br />
