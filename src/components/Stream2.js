@@ -179,7 +179,7 @@ class App extends Component {
     }
     render() {
         return (
-
+                    
             <div className="container-fluid bg_img_stream">
             <div className="row">
           
@@ -190,7 +190,7 @@ class App extends Component {
                     <div className="col-6 video-1">
                     <div id="Player1">
                         <video id="localStream1" height="300px" width="450px" controls></video>
-                        <p className="name-user">{this.props.UserName ? this.props.UserName : 'User 1'}</p>
+                        <p className="name-user">{this.state.NamePlayer1 ? this.state.NamePlayer1 : 'User 1'}</p>
                         <button  className="btn btn-warning vote-click" style={{position: "relative",left: "120px"}} onClick={this.Vote1} > Vote Player 1 </button>
                     </div>
                     </div>
@@ -205,7 +205,8 @@ class App extends Component {
                 </div>
                 <p className=" time-remain" > Time remain: {this.state.Time} </p>  
                 </div>
-                   
+                    {/* <button onClick={this._onStartLiveStream} className="" >Start Livestream</button> */}
+                    {/* <button className="btn btn_custom_1 btn_round start-btn" id="start" onClick={this._startGame}>START</button> */}
                 </div>
                 <div className="col-4">
                 <div className="chat">
@@ -220,6 +221,48 @@ class App extends Component {
                 </div>
               </div>  
             </div>
+            
+            
+//             <div className="container-fluid bg_img_stream">
+//             <div className="row">
+          
+//                 <div className="video-area col-8"> 
+//                     <p className="room-now" >   {this.props.Room ? this.props.Room : 'Name of Room'} </p>
+                   
+//                     <div className="row">
+//                     <div className="col-6 video-1">
+//                     <div id="Player1">
+//                         <video id="localStream1" height="300px" width="450px" controls></video>
+//                         <p className="name-user">{this.props.UserName ? this.props.UserName : 'User 1'}</p>
+//                         <button  className="btn btn-warning vote-click" style={{position: "relative",left: "120px"}} onClick={this.Vote1} > Vote Player 1 </button>
+//                     </div>
+//                     </div>
+//                 <div className="col-6 video-2">
+
+//                     <div id="Player2">
+//                         <video id="localStream2" height="300px" width="450px" controls></video>
+//                         <p className="name-user">{this.state.NamePlayer2 ? this.state.NamePlayer2 : 'User 2'}</p>
+//                         <button className="btn btn-warning vote-click" style={{position: "relative",left: "120px"}} onClick={this.Vote2} > Vote Player 2 </button>
+//                     </div>
+
+//                 </div>
+//                 <p className=" time-remain" > Time remain: {this.state.Time} </p>  
+//                 </div>
+                   
+//                 </div>
+//                 <div className="col-4">
+//                 <div className="chat">
+//                     <div className="chat-content">
+//                         {this.renderChat()}
+//                     </div>
+//                     <div className="chat-area">
+//                         <Input className="type-chat" type="text" onChange={this._onInputChange} value={this.state.nowChatText} />
+//                         <button className="btn btn-custom" onClick={this._onSendChatText} >Send</button>
+//                     </div>
+//                 </div>
+//                 </div>
+//               </div>  
+//             </div>
        
         );
     }
