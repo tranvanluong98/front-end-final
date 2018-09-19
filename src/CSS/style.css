@@ -921,6 +921,9 @@ body{
  .profile{
 font-size: 20px;
  }
+ .profile:hover{
+    color: #DAAB29;
+ }
  .logo-img{
     background-image: url('https://vignette.wikia.nocookie.net/deathbattle/images/a/a0/DEATH_BATTLE%21_logo_2017_%28Blood_Splatter%29.png/revision/latest?cb=20180706114619');
     background-size: 232px;
