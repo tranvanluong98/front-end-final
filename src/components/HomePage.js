@@ -18,13 +18,13 @@ class HomePage extends Component {
         }
     });
     
-    $('.navbar-nav a').on('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 0
-        }, 1500);
-        event.preventDefault();
-    });
+//     $('.navbar-nav a').on('click', function(event) {
+//         var $anchor = $(this);
+//         $('html, body').stop().animate({
+//             scrollTop: $($anchor.attr('href')).offset().top - 0
+//         }, 1500);
+//         event.preventDefault();
+//     });
       axios.get('https://server-musicbattle.herokuapp.com/api/auth/login/check')
       .then(res=>{
         this.props.history.push('Mainpage');
