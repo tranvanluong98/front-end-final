@@ -94,7 +94,7 @@ class App extends Component {
           }}/>
 
           <Route exact path="/InRoom/:Room/Vote" render={(props)=>{
-            return <Vote {...props}/>
+            return <Vote {...props} nameSignIn={this.state.nameSignIn}/>
           }}/>
           
           
