@@ -929,3 +929,45 @@ font-size: 20px;
  }
                                             
  /*  */
+
+ /* -------------------------------------------Detail room -------------------------------------*/
+
+ .room-name-custom{
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    top: -34px;
+    right: -150px;
+    font-weight: 600;
+ }
+ .room-name-custom:hover{
+     color: rgb(49, 40, 206);
+ }
+ .name-room-title{
+     font-weight: bolder;
+     color: #a50404;
+    
+ }
+    /* Main.js */
+ .room-now-battle{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(238, 178, 13);
+ }
+
+ .center-input-custom{
+    position: relative;
+    top: 35%;
+    margin-left: 33%;
+}
+
+.create-btn-room{
+    position: relative;
+    margin-left: 45%;
+    /* top: -7%; */
+    display: inline-block;
+}
+.bg-create-room{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd5ioaXWt4LU0xeDuF5vOTl40I4dpdIv9GujjqeOWJLvwiINXp')
+}
