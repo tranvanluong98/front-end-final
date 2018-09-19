@@ -6,9 +6,9 @@ import axios from 'axios';
 axios.defaults.withCredentials = true;
 // import 'jquery/external/sizzle/dist/'
 class HomePage extends Component {
-    componentDidMount() {
-        
-      $(window).on('scroll', function() {
+   
+    componentDidMount(){
+           $(window).on('scroll', function() {
         var scroll = $(window).scrollTop();
     
         if (scroll >= 50) {
@@ -25,9 +25,6 @@ class HomePage extends Component {
         }, 1500);
         event.preventDefault();
     });
-    
-    }
-    componentDidMount(){
       axios.get('https://server-musicbattle.herokuapp.com/api/auth/login/check')
       .then(res=>{
         this.props.history.push('Mainpage');
