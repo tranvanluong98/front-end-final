@@ -117,10 +117,6 @@ class Register extends Component {
               </Input>
             </Nav>
 
-//             <Nav className='avatar col-5'>
-//               <Input type="file" name="file" id="exampleFile" />
-//             </Nav>
-
             
           </Form>
           <Button className='mt-3 button-register' onClick={this.handleRegister} >REGISTER </Button>
