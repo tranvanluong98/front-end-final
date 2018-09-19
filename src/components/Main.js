@@ -42,13 +42,22 @@ class App extends Component {
         }
         const displayerRoom = displayerRoom1.filter(room => room.nameSong.includes(this.state.searchText)) ;
         return (
-            <div > 
+             <div > 
                 <Navbar  UserName={this.props.UserName} {...this.props} setSearchText={this._setSearchText} />
-                <h1>Cac Room Hien Co</h1>
+                {/* Edit final */}
+                <h1 className="room-now-battle">Các Phòng Hiện Tại</h1><hr style={{fontWeight:"bolder", borderTop: "1px solid rgba(0,0,0,0.3)"}}/>
                
                 <MainContent Rooms={displayerRoom} setRoom={this.props.setRoom} {...this.props} nameSignIn={this.props.nameSignIn} />
            
         </div>
+            
+//             <div > 
+//                 <Navbar  UserName={this.props.UserName} {...this.props} setSearchText={this._setSearchText} />
+//                 <h1>Cac Room Hien Co</h1>
+               
+//                 <MainContent Rooms={displayerRoom} setRoom={this.props.setRoom} {...this.props} nameSignIn={this.props.nameSignIn} />
+           
+//         </div>
         );
     }
 }
