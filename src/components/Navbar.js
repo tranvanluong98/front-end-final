@@ -27,14 +27,14 @@ class Navbar extends Component {
                 <input onChange={this._onChangeInput} placeholder="Search Song ..." className="form-control bg-input"/>
             </form>
             <div className="col-2 ">
-                <Link to={"CreateRoom"}><span className="text-light profile">CreateRoom</span></Link>
+                <Link to={"CreateRoom"}><span className="text-light profile">Tạo Phòng Mới</span></Link>
             </div>
             <div className="col-2 ">
-                 <Link to={"profile"}> <span className="text-light profile">View Profile</span></Link>
+                 <Link to={"profile"}> <span className="text-light profile">Xem Hồ Sơ</span></Link>
             </div>
             <div className="col-3">
             {
-                this.props.UserName ?  <div> <span className="welcome-text">Welcome:{this.props.UserName} </span>
+                this.props.UserName ?  <div> <span className="welcome-text">{this.props.UserName} </span>
                 < span className="logout" onClick={this._onLogout}> Logout</span> </div> : <Link to={'login'} ><button className="btn btn-primary btn-block"> Login </button> </Link>
             }
            
