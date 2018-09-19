@@ -44,13 +44,21 @@ class App extends Component {
     render() {
         
         return (
-            <div className="container-fluid bg-secondary" style={{height:"690px"}}>
-                <form>
-                <input style={{width:"60%", marginBottom:"10px"}} className="room-name bg-input form-control" type="text" onChange={this._onChangeInput} placeholder="Name Room"></input>
-                <input style={{width:"60%" , marginBottom:"10px"}} className="nameSong  bg-input form-control" type="text" onChange={this._onChangeSong} placeholder="Name Song"></input>
+             <div className="container-fluid bg-secondary bg-create-room" style={{height:"690px"}}>
+                <form className="center-input-custom">
+                
+                <input style={{width:"60%", marginBottom:"10px"}}  className="room-name bg-input form-control " type="text" onChange={this._onChangeInput} placeholder="Nhập Tên Phòng"></input>
+                <input style={{width:"60%", marginBottom:"10px"}} className="nameSong  bg-input form-control " type="text" onChange={this._onChangeSong} placeholder="Nhập Tên Bài Hát"></input>
                 </form>
-                <button className="btn btn_custom_1 " onClick={this._onSubmit}>Create Room</button>
+                <button className="btn btn_custom_1 create-btn-room" onClick={this._onSubmit}>Create Room</button>
             </div>
+//             <div className="container-fluid bg-secondary" style={{height:"690px"}}>
+//                 <form>
+//                 <input style={{width:"60%", marginBottom:"10px"}} className="room-name bg-input form-control" type="text" onChange={this._onChangeInput} placeholder="Name Room"></input>
+//                 <input style={{width:"60%" , marginBottom:"10px"}} className="nameSong  bg-input form-control" type="text" onChange={this._onChangeSong} placeholder="Name Song"></input>
+//                 </form>
+//                 <button className="btn btn_custom_1 " onClick={this._onSubmit}>Create Room</button>
+//             </div>
         );
     }
 }
