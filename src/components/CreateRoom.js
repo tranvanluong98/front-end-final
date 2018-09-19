@@ -24,7 +24,8 @@ class App extends Component {
        console.log("state: " + this.state.player1);
         axios.post("https://server-musicbattle.herokuapp.com/api/music",this.state)
         .then(res=> this.props.history.push("InRoom/"+this.state.name+'/MainUser1'))
-        .catch(err=>console.error(err));
+        .catch(err=>alert("Phòng Đã Tồn Tại. Mời Bạn Đặt Tên Khác"));
+//         .catch(err=>console.error(err));
        
     }
     componentDidMount(){
